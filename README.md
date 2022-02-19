@@ -9,7 +9,7 @@ vless 相比 vmess 性能更加优秀，占用资源更少，运行更加稳定�
 
 经测试本镜像占用内存资源较低，运行稳定。
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https://github.com/fewghre/vlessnow)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https://github.com/vz2w/vlessnow)
 
 ## 注意
 
@@ -36,9 +36,9 @@ vless 相比 vmess 性能更加优秀，占用资源更少，运行更加稳定�
 addEventListener(  
 &emsp;&emsp;"fetch",event => {  
 &emsp;&emsp;&emsp;&emsp;let url=new URL(event.request.url);  
-&emsp;&emsp;&emsp;&emsp;url.hostname="xx.herokuapp.com";//你的heroku域名    
+&emsp;&emsp;&emsp;&emsp;url.hostname="xx.herokuapp.com";    
 &emsp;&emsp;&emsp;&emsp;let request=new Request(url,event.request);  
-&emsp;&emsp;&emsp;&emsp;event. respondWith(  
+&emsp;&emsp;&emsp;&emsp;event.respondWith(  
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;fetch(request)  
 &emsp;&emsp;&emsp;&emsp;)  
 &emsp;&emsp;}  
